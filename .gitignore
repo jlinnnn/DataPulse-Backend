@@ -1,8 +1,21 @@
+# Datasets — large intermediate GloVe / word2vec files
 dataset/*.txt
+
+# Environments
 venv/
+.venv/
+env/
 
-# ignore all .pyc files
+# Secrets
+.env
 
+# Python
 *.pyc
-
 __pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

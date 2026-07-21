@@ -14,8 +14,8 @@ import os
 
 
 r = redis.Redis(
-  host='redis-11644.c309.us-east-2-1.ec2.cloud.redislabs.com',
-  port=11644,
+  host=os.environ.get('REDIS_HOST', 'localhost'),
+  port=int(os.environ.get('REDIS_PORT', 6379)),
   password=os.environ.get('REDIS_PASSWORD')
 )
 
